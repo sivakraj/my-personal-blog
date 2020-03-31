@@ -4,6 +4,10 @@ This is my _first blog_ as part of my carrier sojourn towards the front end deve
 
 This webpage is created with two purposes, one is to provide knowledge on topics of self realization and other is to practice CSS Grid and Flexbox concepts.
 
+# Accessing the site in your favorite browser
+
+click the link: https://siva-k-raj-spiritual-blog.netlify.com/
+
 ### Getting Started
 
 There are two methods for getting started with this repo.
