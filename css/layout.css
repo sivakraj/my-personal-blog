@@ -1,0 +1,12 @@
+/* Style for page layout */
+.blog-container {
+    display: grid;
+    grid-template-rows: 0.5fr 0.04fr auto 0.1fr;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "sd sd sd sd sd sd sd sd"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    column-gap: 5px;
+    row-gap: 5px;
+}

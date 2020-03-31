@@ -1,0 +1,82 @@
+@import url(base.css);
+@import url(layout.css);
+
+/* For Button */
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ccaf0b;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Media Queries */
+@media all and (min-width: 1001px) {
+    .nav-flex-container {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .nav-flex-container a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255,0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-flex-container li:last-of-type a {
+        border-bottom: none;
+    }
+
+    .blog-container {
+        grid-template-columns: 0.2fr 0.4fr 0.4fr;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "sd main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+}
+
+@media all and (min-width: 650px) {
+    .main-flex-container {
+        flex-flow: row;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .blog-header {
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,41 @@
+@import url(base.css);
+@import url(layout.css);
+
+/* BlockQoute */
+.blockquote {
+    margin: 0;
+}
+
+.blockquote p {
+    padding: 15px;
+    background: #000;
+    border-radius: 5px;
+    color: cadetblue;
+}
+
+.blockquote p::before {
+    content: '\201C';
+}
+
+.blockquote p::after {
+    content: '\201D';
+}
+
+/* Media Queries */
+@media all and (max-width: 600px) {
+    .blog-header {
+        align-items: flex-start;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .img-responsive {
+        width: 70%;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .img-responsive {
+        width: 60%;
+    }
+}
